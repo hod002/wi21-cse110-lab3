@@ -1,0 +1,114 @@
+a:hover { /* links change color on hover */ 
+    color: green;
+}
+
+a:active { /* orange when link is clicked */
+    color: rgb(240, 13, 50);
+}
+
+title { /* align title to center */
+    text-align: center;
+    text-decoration: underline;
+    color: #1e9470;
+}
+
+h1 {
+    color: #FF35;
+}
+
+h3.centered {
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* Id selector */
+#favClasses {
+    text-align: center;
+    color: rgb(255, 199, 153);
+}
+
+h2.centered {
+    text-align: center;
+}
+
+section.centered {
+    text-align: center;
+}
+
+ol {
+    text-align: horizontal;
+    list-style-position: inside;
+}
+
+ul.left {
+    text-align: left;
+    list-style-position: inside;
+    margin: 0; 
+}
+
+ul {
+    box-sizing: content-box;
+    list-style-position: inside;
+    width: 100px;
+    border: 10px solid blue;
+    padding: 30px;
+    margin: auto;
+}
+
+ul.relative {
+    position: relative;
+    left: 50px;
+}
+
+body {
+    background-color: rgb(174, 174, 219);
+    width: vmax;
+    border: 5px solid green;
+    padding: 3em;
+    margin: 10vmin;
+}
+
+section.dashed {
+    border-style: dashed;
+    border-color: yellow;
+    border-width: medium;
+    border
+}
+
+section.round {
+    border: 4px solid orange; 
+    border-radius: 15px 50px;
+    padding: 1.2em;
+    position: fixed;
+    left: 20px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+
+* {
+    font-family: 'Potta One', cursive;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+      background-color: navy;
+    }
+  }
+
+span {
+    display: block;
+}
+
+ul.inline {
+    display: inline;
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid {
+    display: inline-grid;
+    grid-template-columns: 80px 20px 50px 100px;
+  }
