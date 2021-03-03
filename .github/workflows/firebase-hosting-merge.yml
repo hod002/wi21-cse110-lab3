@@ -2,7 +2,7 @@
 # https://github.com/firebase/firebase-tools
 
 name: Deploy to Firebase Hosting on merge
-'on':
+"on":
   push:
     branches:
       - main
@@ -10,16 +10,15 @@ jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: GitHub Action for Firebase
-    # You may pin to the exact commit or the version.
-    # uses: w9jds/firebase-action@0a5173f97c956332c9e71750526e0ca6f38cbe3a
-        uses: w9jds/firebase-action@v2.0.0F
+      - name: Deploy to Firebase Hosting
+        uses: FirebaseExtended/action-hosting-deploy@v0
+
   #    - uses: actions/checkout@v2
-   #   - uses: FirebaseExtended/action-hosting-deploy@v0
-    #    with:
-     #     repoToken: '${{ secrets.GITHUB_TOKEN }}'
-      #    firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_TESTGITHUBACTIONS_43D35 }}'
-       #   channelId: live
-        #  projectId: testgithubactions-43d35
-        #env:
-         # FIREBASE_CLI_PREVIEWS: hostingchannels
+  #   - uses: FirebaseExtended/action-hosting-deploy@v0
+  #    with:
+  #     repoToken: '${{ secrets.GITHUB_TOKEN }}'
+  #    firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_TESTGITHUBACTIONS_43D35 }}'
+  #   channelId: live
+  #  projectId: testgithubactions-43d35
+  #env:
+  # FIREBASE_CLI_PREVIEWS: hostingchannels
