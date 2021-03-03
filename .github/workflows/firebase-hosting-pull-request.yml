@@ -15,7 +15,7 @@ jobs:
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_TESTGITHUBACTIONS_43D35 }}'
-          chanelId: live
+          channelId: live
           projectId: testgithubactions-43d35
           args: deploy --only hosting
         env:
